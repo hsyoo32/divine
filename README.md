@@ -6,35 +6,28 @@ Directed Network Embedding with Virtual Negative Edges
 
 ## Requirements
 - python 35
-- scikit-learn==0.21.3
+- scikit-learn==0.21.3 (specific version for STNE)
 - numpy
 - tqdm
+- networkx
+- pandas
 
 ### For WRMF:
-- python 35
+- tensorflow==1.13.1
 - Cython
-go to '*./NeuRec*' and compline the evaluator of cpp implementation with the following command line:
+go to '*./NeuRec*' and compile the evaluator of cpp implementation with the following command line:
 ```bash
 python setup.py build_ext --inplace
 ```
-- tensorflow==1.13.1
-- pandas
 
 ### For STNE:
-- python 35
-- scikit-learn==0.21.3
 - texttable
-- networkx
-- tqdm
 
 ### For SIDE:
 - OS: Only Mac OS and Linux are available for this code.
-- python 35 
 - tensorflow==1.1
-- pandas
-- networkx
 
-#### Please refer to the author's original README.md for more details of WRMF, STNE, and SIDE.
+#### (Please refer to the author's original README.md for more details of WRMF, STNE, and SIDE.)
 
 ## Usage
 
