@@ -1,0 +1,50 @@
+2020-07-17 22:40:41.184: Dataset name: p2p
+The number of users: 2445
+The number of items: 5829
+The number of ratings: 20336
+Average actions of users: 8.32
+Average actions of items: 3.49
+The sparsity of the dataset: 99.857310%
+2020-07-17 22:40:41.184: 
+
+NeuRec hyperparameters:
+recommender=WRMF
+config_dir=./conf
+gpu_id=0
+gpu_mem=0.5
+data.input.path=dataset
+data.input.dataset=p2p
+data.column.format=UI
+data.convert.separator='\t'
+user_min=0
+item_min=0
+splitter=given
+ratio=0.8
+by_time=False
+metric=["Precision", "Recall", "NDCG", "MAP", "MRR"]
+topk=[10, 20]
+group_view=None
+rec.evaluate.neg=0
+test_batch_size=128
+num_thread=8
+
+WRMF's hyperparameters:
+epochs=5
+embedding_size=16
+reg_mf=0.1
+alpha=10
+init_method=uniform
+stddev=0.01
+verbose=1
+
+2020-07-17 22:40:41.340: metrics:	Precision@10	Precision@20	Recall@10   	Recall@20   	NDCG@10     	NDCG@20     	MAP@10      	MAP@20      	MRR@10      	MRR@20      
+2020-07-17 22:40:44.308: iteration 1 finished in 2.968062 seconds
+2020-07-17 22:40:44.355: epoch 1:	0.00892525  	0.00773366  	0.04626168  	0.08107477  	0.02711759  	0.03759798  	0.01603054  	0.01898815  	0.02800623  	0.03126941  
+2020-07-17 22:40:47.182: iteration 2 finished in 2.827459 seconds
+2020-07-17 22:40:47.229: epoch 2:	0.01233647  	0.01042056  	0.06425234  	0.10911215  	0.03704326  	0.05057034  	0.02184320  	0.02602293  	0.03719959  	0.04066419  
+2020-07-17 22:40:49.807: iteration 3 finished in 2.577518 seconds
+2020-07-17 22:40:49.853: epoch 3:	0.01406545  	0.01158878  	0.07383177  	0.12149533  	0.04177481  	0.05628468  	0.02440987  	0.02906498  	0.04119345  	0.04474964  
+2020-07-17 22:40:52.353: iteration 4 finished in 2.499412 seconds
+2020-07-17 22:40:52.400: epoch 4:	0.01415891  	0.01189251  	0.07476635  	0.12453271  	0.04335210  	0.05866029  	0.02610843  	0.03098939  	0.04315143  	0.04714666  
+2020-07-17 22:40:54.899: iteration 5 finished in 2.499412 seconds
+2020-07-17 22:40:54.930: epoch 5:	0.01471966  	0.01240653  	0.07733645  	0.13037384  	0.04516539  	0.06130701  	0.02726876  	0.03241232  	0.04541166  	0.04947527  

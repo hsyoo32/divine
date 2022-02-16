@@ -1,0 +1,10 @@
+0 epoch time: 311.90774273872375 seconds 
+1 epoch time: 311.810830116272 seconds 
+2 epoch time: 311.85431456565857 seconds 
+3 epoch time: 311.78841161727905 seconds 
+4 epoch time: 311.8701705932617 seconds 
+5 epoch time: 311.89927101135254 seconds 
+6 epoch time: 311.8699972629547 seconds 
+7 epoch time: 311.8735091686249 seconds 
+8 epoch time: 311.8558449745178 seconds 
+9 epoch time: 311.875572681427 seconds 

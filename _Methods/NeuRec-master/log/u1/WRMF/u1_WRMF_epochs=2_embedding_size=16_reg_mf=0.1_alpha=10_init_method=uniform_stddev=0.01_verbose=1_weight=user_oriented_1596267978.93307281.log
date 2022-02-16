@@ -1,0 +1,47 @@
+2020-08-01 16:46:18.933: Dataset name: u1
+The number of users: 5648
+The number of items: 2354
+The number of ratings: 103224
+Average actions of users: 18.28
+Average actions of items: 43.85
+The sparsity of the dataset: 99.223611%
+2020-08-01 16:46:18.934: 
+
+NeuRec hyperparameters:
+recommender=WRMF
+config_dir=./conf
+gpu_id=0
+gpu_mem=0.5
+data.input.path=C:\Users\HyunsikYoo\Desktop\VNE_directed_networks/_Data/wiki-vote/5-fold/u1/
+data.input.dataset=u1
+data.output.path=C:\Users\HyunsikYoo\Desktop\VNE_directed_networks/_Data/wiki-vote/5-fold/u1/relevance_WRMF_directed_True_user_oriented
+data.column.format=UI
+data.convert.separator='\t'
+user_min=0
+item_min=0
+splitter=given
+ratio=0.8
+by_time=False
+metric=["Precision", "Recall", "NDCG", "MAP", "MRR"]
+topk=[10, 20]
+group_view=None
+rec.evaluate.neg=0
+test_batch_size=128
+num_thread=8
+data.index.remap=True
+
+WRMF's hyperparameters:
+epochs=2
+embedding_size=16
+reg_mf=0.1
+alpha=10
+init_method=uniform
+stddev=0.01
+verbose=1
+weight=user_oriented
+
+2020-08-01 16:46:53.675: metrics:	Precision@10	Precision@20	Recall@10   	Recall@20   	NDCG@10     	NDCG@20     	MAP@10      	MAP@20      	MRR@10      	MRR@20      
+2020-08-01 16:46:56.132: iteration 1 finished in 2.456429 seconds
+2020-08-01 16:46:56.216: epoch 1:	0.02663674  	0.02254867  	0.03398838  	0.05762168  	0.03706372  	0.04196412  	0.01779151  	0.01692660  	0.07017533  	0.07476889  
+2020-08-01 16:46:58.669: iteration 2 finished in 2.453437 seconds
+2020-08-01 16:46:58.746: epoch 2:	0.06224889  	0.05333818  	0.11586301  	0.18109290  	0.10306071  	0.12041206  	0.05791090  	0.05886324  	0.16025405  	0.16753531  

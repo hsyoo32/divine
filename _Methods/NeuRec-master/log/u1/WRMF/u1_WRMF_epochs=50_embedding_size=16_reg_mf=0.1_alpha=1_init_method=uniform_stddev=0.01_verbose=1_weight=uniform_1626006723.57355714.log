@@ -1,0 +1,42 @@
+2021-07-11 21:32:03.573: Dataset name: u1
+The number of users: 22273
+The number of items: 22273
+The number of ratings: 90507
+Average actions of users: 4.06
+Average actions of items: 4.06
+The sparsity of the dataset: 99.981756%
+2021-07-11 21:32:03.573: 
+
+NeuRec hyperparameters:
+recommender=WRMF
+config_dir=./conf
+gpu_id=0
+gpu_mem=0.5
+data.input.path=C:\Users\tensorflow\hsyoo\Workingon_210628/_Data/cora/5-fold/u1/
+data.input.dataset=u1
+data.output.path=C:\Users\tensorflow\hsyoo\Workingon_210628/_Emb/cora/5-fold/wrmf/u1_wrmf_directed_dim16_uniform_send_positive.emb
+data.column.format=UI
+data.convert.separator='\t'
+user_min=0
+item_min=0
+splitter=given
+ratio=0.8
+by_time=False
+metric=["Precision", "Recall", "NDCG", "MAP", "MRR"]
+topk=[10, 20]
+group_view=None
+rec.evaluate.neg=0
+test_batch_size=128
+num_thread=8
+data.index.remap=False
+
+WRMF's hyperparameters:
+epochs=50
+embedding_size=16
+reg_mf=0.1
+alpha=1
+init_method=uniform
+stddev=0.01
+verbose=1
+weight=uniform
+

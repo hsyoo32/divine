@@ -1,0 +1,57 @@
+2020-09-21 21:11:33.386: Dataset name: u1
+The number of users: 5905
+The number of items: 5907
+The number of ratings: 20336
+Average actions of users: 3.44
+Average actions of items: 3.44
+The sparsity of the dataset: 99.941699%
+2020-09-21 21:11:33.387: 
+
+NeuRec hyperparameters:
+recommender=WRMF
+config_dir=./conf
+gpu_id=0
+gpu_mem=0.5
+data.input.path=C:\Users\HyunsikYoo\Desktop\VNE_directed_networks/_Data/p2p-Gnutella08/5-fold/u1/
+data.input.dataset=u1
+data.output.path=C:\Users\HyunsikYoo\Desktop\VNE_directed_networks/_Data/p2p-Gnutella08/5-fold/u1/relevance_WRMF_directed_outprop_False_uniform
+data.column.format=UI
+data.convert.separator='\t'
+user_min=0
+item_min=0
+splitter=given
+ratio=0.8
+by_time=False
+metric=["Precision", "Recall", "NDCG", "MAP", "MRR"]
+topk=[10, 20]
+group_view=None
+rec.evaluate.neg=0
+test_batch_size=128
+num_thread=8
+data.index.remap=False
+
+WRMF's hyperparameters:
+epochs=50
+embedding_size=16
+reg_mf=0.1
+alpha=10
+init_method=uniform
+stddev=0.01
+verbose=1
+weight=uniform
+
+2020-09-21 21:13:06.056: metrics:	Precision@10	Precision@20	Recall@10   	Recall@20   	NDCG@10     	NDCG@20     	MAP@10      	MAP@20      	MRR@10      	MRR@20      
+2020-09-21 21:13:10.056: iteration 1 finished in 4.000159 seconds
+2020-09-21 21:13:10.107: epoch 1:	0.00808412  	0.00696263  	0.04322430  	0.07445484  	0.02511257  	0.03446786  	0.01461068  	0.01725509  	0.02633121  	0.02918909  
+2020-09-21 21:13:13.963: iteration 2 finished in 3.855914 seconds
+2020-09-21 21:13:14.008: epoch 2:	0.01107479  	0.01014019  	0.05934579  	0.10677570  	0.03603867  	0.05049970  	0.02219599  	0.02660125  	0.03868956  	0.04262453  
+2020-09-21 21:13:17.912: iteration 3 finished in 3.903710 seconds
+2020-09-21 21:13:17.959: epoch 3:	0.01299068  	0.01147196  	0.06869159  	0.12149533  	0.04033967  	0.05616157  	0.02444538  	0.02936924  	0.04087561  	0.04474208  
+2020-09-21 21:13:21.909: iteration 4 finished in 3.949949 seconds
+2020-09-21 21:13:21.953: epoch 4:	0.01373835  	0.01214952  	0.07266355  	0.12873831  	0.04301066  	0.05984556  	0.02622144  	0.03153868  	0.04417112  	0.04819700  
+2020-09-21 21:13:25.834: iteration 5 finished in 3.879795 seconds
+2020-09-21 21:13:25.881: epoch 5:	0.01411218  	0.01226635  	0.07476635  	0.12990654  	0.04418070  	0.06072715  	0.02702696  	0.03226055  	0.04524255  	0.04914236  
+2020-09-21 21:13:29.800: iteration 6 finished in 3.918910 seconds
+2020-09-21 21:13:29.845: epoch 6:	0.01429910  	0.01240653  	0.07570093  	0.13130841  	0.04496688  	0.06161511  	0.02752828  	0.03279011  	0.04652520  	0.05038362  
+2020-09-21 21:13:33.729: iteration 7 finished in 3.883966 seconds
+2020-09-21 21:13:33.775: epoch 7:	0.01425237  	0.01259345  	0.07523365  	0.13317756  	0.04527640  	0.06263987  	0.02799844  	0.03351217  	0.04710355  	0.05113211  

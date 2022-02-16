@@ -1,0 +1,8 @@
+2020-07-17 21:48:37.806: ml-100k_ratio_u0_i0
+2020-07-17 21:48:37.806: Dataset name: ml-100k
+The number of users: 943
+The number of items: 1682
+The number of ratings: 100000
+Average actions of users: 106.04
+Average actions of items: 59.45
+The sparsity of the dataset: 93.695331%

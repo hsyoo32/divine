@@ -1,0 +1,47 @@
+2020-11-04 15:10:54.577: Dataset name: u1
+The number of users: 5907
+The number of items: 5907
+The number of ratings: 20336
+Average actions of users: 3.44
+Average actions of items: 3.44
+The sparsity of the dataset: 99.941718%
+2020-11-04 15:10:54.577: 
+
+NeuRec hyperparameters:
+recommender=WRMF
+config_dir=./conf
+gpu_id=0
+gpu_mem=0.5
+data.input.path=C:\Users\HyunsikYoo\Desktop\VNE_directed_networks/_Data/p2p-Gnutella08/5-fold/u1/
+data.input.dataset=u1
+data.output.path=C:\Users\HyunsikYoo\Desktop\VNE_directed_networks/_Emb/p2p-Gnutella08/5-fold/wrmf/u1_wrmf_directed_dim128.emb
+data.column.format=UI
+data.convert.separator='\t'
+user_min=0
+item_min=0
+splitter=given
+ratio=0.8
+by_time=False
+metric=["Precision", "Recall", "NDCG", "MAP", "MRR"]
+topk=[10, 20]
+group_view=None
+rec.evaluate.neg=0
+test_batch_size=128
+num_thread=8
+data.index.remap=False
+
+WRMF's hyperparameters:
+epochs=2
+embedding_size=2
+reg_mf=0.1
+alpha=10
+init_method=uniform
+stddev=0.01
+verbose=1
+weight=uniform
+
+2020-11-04 15:12:21.145: metrics:	Precision@10	Precision@20	Recall@10   	Recall@20   	NDCG@10     	NDCG@20     	MAP@10      	MAP@20      	MRR@10      	MRR@20      
+2020-11-04 15:12:24.662: iteration 1 finished in 3.516850 seconds
+2020-11-04 15:12:24.703: epoch 1:	0.00668225  	0.00556076  	0.03481308  	0.05841121  	0.01810528  	0.02526870  	0.00943925  	0.01155696  	0.01672044  	0.01886378  
+2020-11-04 15:12:28.088: iteration 2 finished in 3.385517 seconds
+2020-11-04 15:12:28.127: epoch 2:	0.00962618  	0.00850468  	0.05093458  	0.08925234  	0.02690692  	0.03858681  	0.01490960  	0.01830078  	0.02465695  	0.02821557  

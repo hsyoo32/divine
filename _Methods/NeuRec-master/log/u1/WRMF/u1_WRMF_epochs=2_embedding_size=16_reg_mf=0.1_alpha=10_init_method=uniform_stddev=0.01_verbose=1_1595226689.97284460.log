@@ -1,0 +1,45 @@
+2020-07-20 15:31:29.972: Dataset name: u1
+The number of users: 2445
+The number of items: 5829
+The number of ratings: 20336
+Average actions of users: 8.32
+Average actions of items: 3.49
+The sparsity of the dataset: 99.857310%
+2020-07-20 15:31:29.972: 
+
+NeuRec hyperparameters:
+recommender=WRMF
+config_dir=./conf
+gpu_id=0
+gpu_mem=0.5
+data.input.path=C:\Users\tensorflow\LYC\INP/_Data/p2p-Gnutella08/5-Fold/u1/
+data.input.dataset=u1
+data.output.path=C:\Users\tensorflow\LYC\INP/_Data/p2p-Gnutella08/5-Fold/u1/
+data.column.format=UI
+data.convert.separator='\t'
+user_min=0
+item_min=0
+splitter=given
+ratio=0.8
+by_time=False
+metric=["Precision", "Recall", "NDCG", "MAP", "MRR"]
+topk=[10, 20]
+group_view=None
+rec.evaluate.neg=0
+test_batch_size=128
+num_thread=8
+
+WRMF's hyperparameters:
+epochs=2
+embedding_size=16
+reg_mf=0.1
+alpha=10
+init_method=uniform
+stddev=0.01
+verbose=1
+
+2020-07-20 15:31:30.129: metrics:	Precision@10	Precision@20	Recall@10   	Recall@20   	NDCG@10     	NDCG@20     	MAP@10      	MAP@20      	MRR@10      	MRR@20      
+2020-07-20 15:31:33.362: iteration 1 finished in 3.218014 seconds
+2020-07-20 15:31:33.409: epoch 1:	0.00892525  	0.00773366  	0.04626168  	0.08107477  	0.02711759  	0.03759798  	0.01603054  	0.01898815  	0.02800623  	0.03126941  
+2020-07-20 15:31:36.361: iteration 2 finished in 2.936808 seconds
+2020-07-20 15:31:36.408: epoch 2:	0.01233647  	0.01042056  	0.06425234  	0.10911215  	0.03704326  	0.05057034  	0.02184320  	0.02602293  	0.03719959  	0.04066419  
