@@ -1,5 +1,5 @@
 # DIVINE
-- The repository is the implementation of [DIVINE]()
+- The repository is the implementation of [DIVINE](https://doi.org/10.1145/3488560.3498470)
 Directed Network Embedding with Virtual Negative Edges
 {Hyunsik Yoo, Yeon-Chang Lee,} Kijung Shin, Sang-Wook Kim
 15th ACM International Conference on Web Search and Data Mining (WSDM), 2022
@@ -15,6 +15,7 @@ Directed Network Embedding with Virtual Negative Edges
 ### For WRMF:
 - tensorflow==1.13.1
 - Cython
+
 go to '*./NeuRec*' and compile the evaluator of cpp implementation with the following command line:
 ```bash
 python setup.py build_ext --inplace
