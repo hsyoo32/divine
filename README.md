@@ -37,7 +37,7 @@ python divine.py --dataset GNU --emb_algo stne --lp_task LP-uniform --num_embed 
 ```
 - vne_algo: Method for inferring degree of negativity
 - selection_strategy: Strategey for selcting VNEs
-- Theta: hyperparamter for determining the number of VNEs to be added
+- theta: hyperparamter for determining the number of VNEs to be added
 - dataset: input (unsigned) network
 - emb_algo: (signed) network embedding method for learning node embeddings
 - num_embed: dimensionality of embeddings
