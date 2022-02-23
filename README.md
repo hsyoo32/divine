@@ -4,6 +4,8 @@ Directed Network Embedding with Virtual Negative Edges
 {Hyunsik Yoo, Yeon-Chang Lee,} Kijung Shin, Sang-Wook Kim
 15th ACM International Conference on Web Search and Data Mining (WSDM), 2022
 
+[Online Apendix](https://sites.google.com/view/divine-wsdm22/main-page)
+
 ## Requirements
 - python 35
 - scikit-learn==0.21.3 (specific version for STNE)
